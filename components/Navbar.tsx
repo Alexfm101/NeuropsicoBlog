@@ -58,7 +58,7 @@ export default function Navbar() {
 									</Link>
 								</li>
 								<li>
-									<Link href="/Home">
+									<Link href="/">
 										<a
 											className="font-bold text-gray-800"
 											href=""
