@@ -38,32 +38,32 @@ export default function Navbar() {
 						<div className="hidden md:flex">
 							<ul className="md:flex md:flex-row md:my-auto md:space-x-5">
 								<li>
-									<Link href="/Portafolio">
+									<Link href="/Articulos">
 										<a
 											className="font-bold text-gray-800"
 											href=""
 										>
-											Portafolio
+											Articulos
 										</a>
 									</Link>
 								</li>
 								<li>
-									<Link href="/Bibliografia">
+									<Link href="/Sobre-mi">
 										<a
 											className="font-bold text-gray-800"
 											href=""
 										>
-											Bibliografia
+											Sobre mi
 										</a>
 									</Link>
 								</li>
 								<li>
-									<Link href="/Contactame">
+									<Link href="/Home">
 										<a
 											className="font-bold text-gray-800"
 											href=""
 										>
-											Contactame
+											Home
 										</a>
 									</Link>
 								</li>
@@ -77,32 +77,32 @@ export default function Navbar() {
 					>
 						<ul className="space-y-2">
 							<li>
-								<Link href="/Portafolio">
+								<Link href="/">
 									<a
 										className="font-bold text-gray-800"
 										href=""
 									>
-										Portafolio
+										Home
 									</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/Bibliografia">
+								<Link href="/Articulos">
 									<a
 										className="font-bold text-gray-800"
 										href=""
 									>
-										Bibliografia
+										Articulos
 									</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/Contactame">
+								<Link href="/Sobre-mi">
 									<a
 										className="font-bold text-gray-800"
 										href=""
 									>
-										Contactame
+										Sobre mi
 									</a>
 								</Link>
 							</li>
