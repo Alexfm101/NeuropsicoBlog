@@ -14,7 +14,7 @@ export default function Home() {
 
             <main className="">
                 <div className="flex justify-center p-20">
-                    <h1 className="text-4xl font-bold text-black">
+                    <h1 className="font-sans text-4xl p-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-pink-600 to-red-500">
                     The Neuropsico Blog
                     </h1>
                 </div>
