@@ -1,20 +1,20 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+// TODO: design logo
+
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<>
-			<div className="max-w-screen-xl mx-auto ">
+			<header className="max-w-screen-xl mx-auto p-2">
 				<nav className=" w-full md:w-auto p-2 md:mx-2">
 					<div className="flex justify-between">
 						<Link href="/">
 							<a href="">
 								<img
-									className={` h-10 ${
-										isOpen ? 'invisible' : ''
-									} `}
+									className="h-10"
 									src="/images/logo.jpg"
 									alt=""
 								/>
@@ -35,81 +35,65 @@ export default function Navbar() {
 								alt=""
 							/>
 						</button>
+
+						{/* menu desktop version */}
 						<div className="hidden md:flex">
 							<ul className="md:flex md:flex-row md:my-auto md:space-x-5">
 								<li>
-									<Link href="/Articulos">
+									<Link href="/Articles">
 										<a
-											className="font-bold text-gray-800"
+											className="font-bold text-white"
 											href=""
 										>
-											Articulos
+											Articles
 										</a>
 									</Link>
 								</li>
 								<li>
-									<Link href="/Sobre-mi">
+									<Link href="/About">
 										<a
-											className="font-bold text-gray-800"
+											className="font-bold text-white"
 											href=""
 										>
-											Sobre mi
-										</a>
-									</Link>
-								</li>
-								<li>
-									<Link href="/">
-										<a
-											className="font-bold text-gray-800"
-											href=""
-										>
-											Home
+											About
 										</a>
 									</Link>
 								</li>
 							</ul>
 						</div>
 					</div>
+
+					{/* mobile version */}
 					<div
-						className={`flex justify-center md:hidden ${
+						className={` p-5 mt-2 rounded-lg shadow-lg bg-gray-100 md:hidden ${
 							isOpen ? '' : 'hidden'
 						}`}
 					>
 						<ul className="space-y-2">
 							<li>
-								<Link href="/">
+								<Link href="/Articles">
 									<a
-										className="font-bold text-gray-800"
+										className="font-bold text-black"
 										href=""
 									>
-										Home
+										Articles
 									</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/Articulos">
+								<Link href="/About">
 									<a
-										className="font-bold text-gray-800"
+										className="font-bold text-black"
 										href=""
 									>
-										Articulos
-									</a>
-								</Link>
-							</li>
-							<li>
-								<Link href="/Sobre-mi">
-									<a
-										className="font-bold text-gray-800"
-										href=""
-									>
-										Sobre mi
+										About me
 									</a>
 								</Link>
 							</li>
 						</ul>
 					</div>
 				</nav>
-			</div>
+			</header>
 		</>
 	);
 }

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+// TODO: add social networks
+
 export default function Footer() {
     const currentYear = new Date().getFullYear();  
 

@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+// TODO: make responsive this page
+
 export default function About() {
     return (
         <div>
