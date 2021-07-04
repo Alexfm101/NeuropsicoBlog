@@ -73,7 +73,7 @@ export default function Navbar() {
 							<li>
 								<Link href="/Articles">
 									<a
-										className="font-bold text-black"
+										className="font-bold text-gray-900"
 										href=""
 									>
 										Articles
@@ -83,7 +83,7 @@ export default function Navbar() {
 							<li>
 								<Link href="/About">
 									<a
-										className="font-bold text-black"
+										className="font-bold text-gray-900"
 										href=""
 									>
 										About me
