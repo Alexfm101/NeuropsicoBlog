@@ -65,7 +65,7 @@ export default function Navbar() {
 
 					{/* mobile version */}
 					<div
-						className={` p-5 mt-2 rounded-lg shadow-lg bg-gray-100 md:hidden ${
+						className={` p-5 mt-2 rounded-lg shadow-lg bg-white md:hidden ${
 							isOpen ? '' : 'hidden'
 						}`}
 					>
