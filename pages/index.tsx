@@ -18,7 +18,7 @@ export default function Home() {
             </Head>
         
 
-            <main className="">
+            <main>
                 {/* presentation */}
                 <div className="relative px-20 py-40 bg-gradient-to-r from-purple-700 via-pink-600 to-red-500">
                     <div className="absolute inset-0">
@@ -46,14 +46,16 @@ export default function Home() {
                         <Post/>
                         <Post/>
                     </div>
-                    <Link href="/Articles">
-                        <a 
-                            className="flex justify-center text-xl font-medium text-gray-400 focus:text-gray-500 underline" 
-                            href=""
-                        >
-                            Read more
-                        </a>
-                    </Link>
+                    <div className="mt-2">
+                        <Link href="/Articles">
+                            <a 
+                                className="flex justify-center text-lg text-gray-400 hover:underline" 
+                                href=""
+                            >
+                                Read more
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             </main>
             <Footer/>
