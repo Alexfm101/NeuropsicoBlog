@@ -38,11 +38,11 @@ export default function Home() {
 
                 {/* what is neuropsico */}
                 <div className="flex justify-center mt-10">
-                    <h1 className="text-2xl font-semibold text-gray-900">
+                    <h1 className="text-2xl font-semibold text-gray-900 lg:text-3xl xl:text-4xl">
                         What is Neuropsico?
                     </h1>
                 </div>
-                <div className="mt-5 flex text-justify px-4 text-gray-900 ">
+                <div className="mt-5 flex text-justify px-4 text-gray-600 lg:w-full lg:mx-auto lg:max-w-4xl xl:max-w-5xl lg:text-lg">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi vitae minus, sunt aliquid minima facere reiciendis nostrum. Deserunt, natus praesentium odit mollitia, enim officia laboriosam, ab quaerat dolores amet est?
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nostrum, quos harum suscipit eaque sequi provident ducimus non neque maxime, commodi sit mollitia ullam iste corrupti ipsum earum tenetur odit.
                 </div>
