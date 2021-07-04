@@ -10,7 +10,7 @@ export default function Footer() {
             <div>
                 <img className="w-full max-h-10" src="/svgs/instagram.svg" alt="" />
             </div>
-            <div className="text-center mt-4 text-lg ">
+            <div className="text-center mt-2 text-lg ">
                 <small>&copy; {currentYear} All rights reserved , Neuropsico</small> 
             </div>
         </footer>
