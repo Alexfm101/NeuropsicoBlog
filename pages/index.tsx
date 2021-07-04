@@ -18,21 +18,31 @@ export default function Home() {
             </Head>
         
 
-            <main>
+            <main className="">
                 {/* presentation */}
-                <div className="relative px-20 py-40 bg-gradient-to-r from-purple-700 via-pink-600 to-red-500">
-                    <div className="absolute inset-0">
+                <div 
+                    className="relative px-20 py-40 md:h-screen bg-gradient-to-r 
+                    from-purple-700 via-pink-600 to-red-500 "
+                >
+                    <div className="absolute inset-x-0 top-0">
                         <Navbar/>
                     </div>
-                    <div className="flex justify-center">
-                        <h1 className="font-sans text-gray-50 text-4xl p-2 font-bold  ">
+                    <div className="flex justify-center md:absolute md:inset-0 md:top-1/2">
+                        <h1 
+                            className="font-sans text-gray-50 text-4xl p-2 font-bold  md:text-5xl lg:text-6xl"
+                        >
                             The Neuropsico Blog
                         </h1>
                     </div>
                 </div>
 
                 {/* what is neuropsico */}
-                <div className="mt-10 flex text-justify px-4 text-gray-900 ">
+                <div className="flex justify-center mt-10">
+                    <h1 className="text-2xl font-semibold text-gray-900">
+                        What is Neuropsico?
+                    </h1>
+                </div>
+                <div className="mt-5 flex text-justify px-4 text-gray-900 ">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi vitae minus, sunt aliquid minima facere reiciendis nostrum. Deserunt, natus praesentium odit mollitia, enim officia laboriosam, ab quaerat dolores amet est?
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nostrum, quos harum suscipit eaque sequi provident ducimus non neque maxime, commodi sit mollitia ullam iste corrupti ipsum earum tenetur odit.
                 </div>
@@ -40,7 +50,7 @@ export default function Home() {
 
                 {/* lasts posts */}
                 <div>
-                    <h1 className="text-3xl font-bold text-gray-900 p-4">Last Posts</h1>
+                    <h1 className="text-2xl font-bold text-gray-900 p-4">Last Posts</h1>
                     <div className="px-4 space-y-2">
                         <Post/>
                         <Post/>
