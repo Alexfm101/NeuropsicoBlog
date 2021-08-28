@@ -11,7 +11,7 @@ export default function Articles() {
     return (
         <div>
             <Head>
-                <title>Neuropsico blog</title>  
+                <title>Neuropsico blog</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -33,6 +33,7 @@ export default function Articles() {
                     <Post/>
                     <Post/>
                 </div>
+                
             </main>
             <Footer/>
         </div>
