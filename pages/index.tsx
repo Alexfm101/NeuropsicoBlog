@@ -11,7 +11,7 @@ export default function Home() {
   return (
         <div>
             <Head>
-                <title>Create Next App</title>  
+                <title>NeuroPsico Blog</title>  
                 <link rel="icon" href="/favicon.ico" />
             </Head>
         
@@ -46,7 +46,7 @@ export default function Home() {
                 </div>
                 <img 
                     className="my-10 shadow-xl w-full md:max-w-lg md:mx-auto" 
-                    src="/images/logo.jpg" 
+                    src="/images/neuropsico-logoV3-01.png" 
                     alt="" 
                 />
 
