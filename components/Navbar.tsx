@@ -14,8 +14,8 @@ export default function Navbar() {
 						<Link href="/">
 							<a href="">
 								<img
-									className="h-10"
-									src="/images/logo.jpg"
+									className=" h-11 md:h-16"
+									src="/images/neuropsico-logoV2-02.png"
 									alt=""
 								/>
 							</a>
@@ -45,7 +45,7 @@ export default function Navbar() {
 											className="font-bold text-white"
 											href=""
 										>
-											Articles
+											ARTICLES
 										</a>
 									</Link>
 								</li>
@@ -55,7 +55,17 @@ export default function Navbar() {
 											className="font-bold text-white"
 											href=""
 										>
-											About
+											ABOUT
+										</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="/Contact">
+										<a
+											className="bg-clip-text text-transparent font-bold bg-gradient-to-r from-pink-100 to-purple-400 md:hover:text-pink-900"
+											href=""
+										>
+											CONTACT ME
 										</a>
 									</Link>
 								</li>
@@ -76,7 +86,7 @@ export default function Navbar() {
 										className="font-bold text-gray-900"
 										href=""
 									>
-										Articles
+										ARTICLES
 									</a>
 								</Link>
 							</li>
@@ -86,10 +96,20 @@ export default function Navbar() {
 										className="font-bold text-gray-900"
 										href=""
 									>
-										About me
+										ABOUT ME
 									</a>
 								</Link>
 							</li>
+							<li>
+								<Link href="/Contact">
+									<a
+										className="bg-clip-text text-transparent font-bold bg-gradient-to-r from-pink-500 to-purple-500"
+										href=""
+									>
+										CONTACT ME
+									</a>
+								</Link>
+								</li>
 						</ul>
 					</div>
 				</nav>
