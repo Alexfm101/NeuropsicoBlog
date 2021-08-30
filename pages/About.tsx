@@ -13,8 +13,8 @@ export default function About() {
                         <Navbar/>
                     </div>
                     <div className="flex justify-center">
-                        <h1 className="font-sans text-gray-50 text-4xl lg:text-5xl p-2 font-bold  ">
-                            About me
+                        <h1 className="font-sans text-gray-50 text-4xl lg:text-5xl p-2 font-bold">
+                            About Me
                         </h1>
                     </div>
                 </div>
