@@ -1,8 +1,8 @@
 
 export default function Post() {
     return (
-        <div className=" flex flex-col rounded-xl bg-gray-50 shadow-lg p-0 content-center">
-            <img className="w-full mx-auto rounded-t-xl" src="/images/logo.jpg" alt="" />
+        <div className=" flex flex-col rounded-xl bg-gray-50 shadow-lg p-0 content-center md:p-4">
+            <img className="w-full mx-auto rounded-t-xl" src="/images/beach.jpg" alt="" />
             <div 
                 className="flex justify-between px-2 mt-2 text-gray-500 font-medium md:text-lg 
             ">
