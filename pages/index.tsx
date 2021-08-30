@@ -2,12 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Post from '../components/Post';
+import Article from '../components/Article';
+import { getSortedPostsData } from '../lib/Articles';
 
-// TODO 2: develop or find a good svg after SEO
-// TODO 3: update post and develop posts components
 
-export default function Home() {
+export default function Home({allArticlesData}) {
   return (
         <div>
             <Head>
@@ -58,10 +57,17 @@ export default function Home() {
                         </h1>
                     </div>
                     <div className="px-4 space-y-2 mt-2 lg:space-y-0 lg:grid lg:grid-cols-2 lg:mx-auto lg:max-w-4xl lg:space-x-4">
-                        <Post/>
-                        <Post/>
-                        <Post/>
-                        <Post/>
+                        <ul>
+                            {allArticlesData.map(({id, date, title}) => (
+                                <li key={id}>
+                                    <Article
+                                        title={title}
+                                        date={date}
+                                        id={id}
+                                    />
+                                </li>    
+                            ))}
+                        </ul>
                     </div>
                     <div className="mt-2">
                         <Link href="/Articles">
@@ -78,4 +84,15 @@ export default function Home() {
             <Footer/>
         </div>
     );
-}
+};
+
+export async function getStaticProps() {
+    const allArticlesData = getSortedPostsData()
+    let lastArticlesData = []
+
+    return {
+        props: {
+            allArticlesData
+        }
+    }
+};
