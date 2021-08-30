@@ -22,13 +22,17 @@ export default function Articles() {
                         <Navbar/>
                     </div>
                     <div className="flex justify-center">
-                        <h1 className="font-sans text-gray-50 text-4xl p-2 font-bold  ">
+                        <h1 className="font-sans text-gray-50 text-4xl lg:text-5xl p-2 font-bold">
                             Articles
                         </h1>
                     </div>
                 </div>
-                {/* lasts posts */}
-                <div className="px-4 space-y-2 mt-10">
+                <div className="px-4 space-y-2 mt-10 lg:grid lg:space-y-0 lg:grid-cols-3 2xl:flex 2xl:flex-col 2xl:max-w-2xl 2xl:mx-auto">
+                    <Post/>
+                    <Post/>
+                    <Post/>
+                    <Post/>
+                    <Post/>
                     <Post/>
                     <Post/>
                     <Post/>
