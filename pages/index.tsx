@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Article from '../components/Article';
-import { getSortedPostsData } from '../lib/Articles';
+import { getLastArticles } from '../lib/Articles';
 
 
-export default function Home({allArticlesData}) {
+export default function Home({lastArticlesData}) {
   return (
         <div>
             <Head>
@@ -18,7 +18,7 @@ export default function Home({allArticlesData}) {
             <main className="">
                 {/* presentation */}
                 <div 
-                    className="relative px-20 py-40 md:h-screen bg-gradient-to-r 
+                    className="relative px-20 py-40 md:h-screen 2xl:h-10 bg-gradient-to-r 
                     from-purple-700 via-pink-600 to-red-500 "
                 >
                     <div className="absolute inset-x-0 top-0">
@@ -56,9 +56,9 @@ export default function Home({allArticlesData}) {
                             Lastest from NeuroPsico
                         </h1>
                     </div>
-                    <div className="px-4 space-y-2 mt-2 lg:space-y-0 lg:grid lg:grid-cols-2 lg:mx-auto lg:max-w-4xl lg:space-x-4">
-                        <ul>
-                            {allArticlesData.map(({id, date, title}) => (
+                    <div className="px-4 mt-2">
+                        <ul className="space-y-2 lg:space-y-0 lg:grid lg:grid-cols-2 lg:mx-auto lg:max-w-4xl ">
+                            {lastArticlesData.map(({id, date, title}) => (
                                 <li key={id}>
                                     <Article
                                         title={title}
@@ -87,12 +87,11 @@ export default function Home({allArticlesData}) {
 };
 
 export async function getStaticProps() {
-    const allArticlesData = getSortedPostsData()
-    let lastArticlesData = []
+    const lastArticlesData = getLastArticles();
 
     return {
         props: {
-            allArticlesData
+            lastArticlesData
         }
     }
 };
