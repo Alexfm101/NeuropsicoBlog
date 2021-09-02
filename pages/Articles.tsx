@@ -24,8 +24,8 @@ export default function Articles({allArticlesData}) {
                         </h1>
                     </div>
                 </div>
-                <div className="px-4 space-y-2 mt-10 lg:grid lg:space-y-0 lg:grid-cols-3 2xl:flex 2xl:flex-col 2xl:max-w-2xl 2xl:mx-auto">
-                    <ul>
+                <div className="px-4 mt-10">
+                    <ul className="space-y-2 lg:grid lg:space-y-0 lg:grid-cols-3 2xl:grid-cols-2 2xl:max-w-6xl 2xl:mx-auto">
                         {allArticlesData.map(({id, date, title}) => (
                             <li key={id}>
                                 <Article
