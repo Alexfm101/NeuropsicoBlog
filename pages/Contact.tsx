@@ -19,20 +19,26 @@ export default function Contact() {
                 <section className="mt-10 md:max-w-xl md:flex md:mx-auto">
                     <form className="p-4 space-y-5">
                         <div className="space-y-5 md:flex md:flex-row md:space-y-0 md:space-x-2">
-                            <input
-                                className="border-2 w-full p-2 border-gray-700 rounded-lg focus:outline-none focus:border-red-400 shadow-xl"
-                                type="text"
-                                placeholder="Nombre"
-                                name="email"
-                                id="name"
-                            />
-                            <input
-                                className="border-2 w-full p-2 border-gray-700 rounded-lg focus:outline-none focus:border-red-400 shadow-xl"
-                                type="email"
-                                placeholder="correo"
-                                name="email"
-                                id="email"
-                            />
+                            <div className="flex flex-col">
+                                <label>Nombre</label>
+                                <input
+                                    className="border-2 w-full p-2 border-gray-700 rounded-lg focus:outline-none focus:border-red-400 shadow-xl"
+                                    type="text"
+                                    placeholder="Nombre"
+                                    name="email"
+                                    id="name"
+                                />
+                            </div>
+                            <div className="flex flex-col">
+                                <label>Correo</label>
+                                <input
+                                    className="border-2 w-full p-2 border-gray-700 rounded-lg focus:outline-none focus:border-red-400 shadow-xl"
+                                    type="email"
+                                    placeholder="correo"
+                                    name="email"
+                                    id="email"
+                                />
+                            </div>
                         </div>
                         <textarea
                             className="border-2 w-full p-2 border-gray-700 rounded-lg focus:outline-none focus:border-red-400 shadow-2xl"
@@ -44,7 +50,7 @@ export default function Contact() {
                         />
                         <div className="flex justify-center">
                             <button
-                                className=" bg-gray-800 px-6 py-2 rounded-xl text-xl text-white font-Comfortaa font-bold focus:outline-none focus:bg-red-400"
+                                className="  border-2 border-gray-700 px-6 py-2 rounded-xl text-xl text-gray-500 font-Comfortaa font-bold focus:outline-none hover:bg-red-400 hover:text-white"
                                 type="submit"
                             >
                                 Enviar
