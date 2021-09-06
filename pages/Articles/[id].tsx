@@ -17,8 +17,8 @@ export default function Article({ArticleData}) {
                     </div>
             </div>
             <main className="container mx-auto px-5 lg:max-w-screen-md">
-                <div>
-                    <small className="mt-1 text-base text-gray-400">
+                <div className="mt-10">
+                    <small className=" text-lg font-semibold text-gray-400">
                         {<Date dateString={ArticleData.date}/>}
                     </small>
                 </div>
