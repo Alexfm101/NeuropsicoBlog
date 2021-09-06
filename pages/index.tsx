@@ -44,9 +44,9 @@ export default function Home({lastArticlesData}) {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nostrum, quos harum suscipit eaque sequi provident ducimus non neque maxime, commodi sit mollitia ullam iste corrupti ipsum earum tenetur odit.
                 </div>
                 <img 
-                    className="my-10 shadow-xl w-full md:max-w-lg md:mx-auto" 
+                    className="my-10 w-full md:max-w-lg md:mx-auto" 
                     src="/images/neuropsico-logoV3-01.png" 
-                    alt="" 
+                    alt="neuroImage" 
                 />
 
                 {/* lasts posts */}
