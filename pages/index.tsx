@@ -14,7 +14,6 @@ export default function Home({lastArticlesData}) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
         
-
             <main className="">
                 {/* presentation */}
                 <div 
