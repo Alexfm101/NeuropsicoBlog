@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "animejs": "^3.2.1",
     "date-fns": "^2.16.1",
     "gray-matter": "^4.0.2",
     "next": "^11.1.0",
