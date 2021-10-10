@@ -19,7 +19,9 @@ export default function Contact() {
     const handleOnSubmit = async (e) => {
         e.preventDefault();
         setStatus((prevStatus) => ({...prevStatus, submitting: true}));
-        
+
+        console.log(info);
+
         const res = await fetch('/api/send', {
             method: 'POST',
             headers: {
