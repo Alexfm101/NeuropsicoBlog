@@ -23,7 +23,7 @@ export default function Article({ArticleData}) {
                     </small>
                 </div>
                 <div 
-                    className="text-justify font-semibold mt-4 text-gray-900 markdown" 
+                    className=" prose lg:prose-xl text-justify font-semibold mt-4 text-gray-900 markdown" 
                     dangerouslySetInnerHTML={{ __html: ArticleData.contentHtml }} 
                 />
             </main>
