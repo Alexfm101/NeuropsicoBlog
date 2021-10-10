@@ -50,7 +50,7 @@ export default function Home({lastArticlesData}) {
 
                 {/* lasts posts */}
                 <div className="">
-                    <div className="xl:flex xl:justify-center">
+                    <div className=" lg:flex lg:justify-center">
                         <h1 className="text-2xl font-bold text-gray-900 p-4 lg:text-3xl xl:text-4xl">
                             Lastest from NeuroPsico
                         </h1>
